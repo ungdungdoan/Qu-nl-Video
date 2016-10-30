@@ -5,9 +5,10 @@ import java.util.Comparator;
 
 public class Book implements Serializable {
 	private int masach, maloai;
-	private String tensach, tacgia, gia;
+	private String tensach, tacgia;
+	private float gia;
 	
-	public Book(int masach, int maloai, String tensach, String tacgia, String gia){
+	public Book(int masach, int maloai, String tensach, String tacgia, float gia){
 		this.masach = masach;
 		this.maloai = maloai;
 		this.tensach = tensach;
@@ -42,10 +43,10 @@ public class Book implements Serializable {
 	public void setTacgia(String tacgia) {
 		this.tacgia = tacgia;
 	}
-	public String getGia() {
+	public float getGia() {
 		return gia;
 	}
-	public void setGia(String gia) {
+	public void setGia(float gia) {
 		this.gia = gia;
 	}
 	public static Comparator<Book> getBookNameComparator() {

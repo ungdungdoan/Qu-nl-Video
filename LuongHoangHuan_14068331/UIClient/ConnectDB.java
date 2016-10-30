@@ -14,7 +14,8 @@ public class ConnectDB {
 			e.printStackTrace();
 		}
 		try {
-			connection = DriverManager.getConnection("jdbc:sqlserver://localhost:49672;databasename=PTUD","sa","sapassword");
+			connection = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databasename=PTUD","sa","a123456789");
+//			connection = DriverManager.getConnection("jdbc:sqlserver://localhost:49672;databasename=PTUD","sa","sapassword");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
